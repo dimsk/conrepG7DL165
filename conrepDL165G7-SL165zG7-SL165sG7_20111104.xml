@@ -1,0 +1,374 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?BIOS 11/04/2011 ?>
+
+<Conrep>
+<global>
+  <fileversion>1.5</fileversion>
+</global>
+
+  <Section name="CMOS_Address_Adjustment">
+    <config>0x00</config>
+  </Section>
+  <Section name="POST_F1_Prompt">
+    <cmos>0xB0</cmos>
+    <value id="0x00">Delayed</value>
+    <value id="0x01">Enabled</value>
+    <value id="0x02">Disabled</value>
+    <mask>0x03</mask>
+  </Section>
+  <Section name="AMD_Virtualization">
+    <cmos>0x4D</cmos>
+    <value id="0x00">Disabled</value>
+    <value id="0x02">Enabled</value>
+    <mask>0x02</mask>
+  </Section>
+  <Section name="PowerNow">
+    <cmos>0xBA</cmos>
+    <value id="0x00">Disabled</value>
+    <value id="0x10">Enabled</value>
+    <mask>0x10</mask>
+  </Section>
+  <Section name="Hardware_Prefetcher">
+    <cmos>0xBA</cmos>
+    <value id="0x00">Disabled</value>
+    <value id="0x20">Enabled</value>
+    <mask>0x20</mask>
+  </Section>
+  <Section name="Software_Prefetcher">
+    <cmos>0xC5</cmos>
+    <value id="0x00">Disabled</value>
+    <value id="0x01">Enabled</value>
+    <mask>0x01</mask>
+  </Section>
+  <Section name="DRAM_PF_Based_On_CPU_Req">
+    <cmos>0xC5</cmos>
+    <value id="0x00">Disabled</value>
+    <value id="0x02">Enabled</value>
+    <mask>0x02</mask>
+  </Section>
+  <Section name="DRAM_Prefetcher">
+    <cmos>0xC5</cmos>
+    <value id="0x00">Disabled</value>
+    <value id="0x04">Enabled</value>
+    <mask>0x04</mask>
+  </Section>
+  <Section name="HyperTransport_Speed">
+    <cmos>0xBB</cmos>
+    <value id="0x00">HT1</value>
+    <value id="0x80">HT3</value>
+    <mask>0x80</mask>
+  </Section>
+  <Section name="C1E_Support">
+    <cmos>0xD0</cmos>
+    <value id="0x00">Disabled</value>
+    <value id="0x80">Enabled</value>
+    <mask>0x80</mask>
+  </Section>
+  <Section name="SATA_Controller_Mode">
+    <cmos>0x99</cmos>
+    <value id="0x00">Compatible</value>
+    <value id="0x08">RAID</value>
+    <value id="0x10">AHCI</value>
+    <value id="0x38">Disabled</value>
+    <mask>0x38</mask>
+  </Section>
+  <Section name="Embedded_SAS_SATA_Link_Rate">
+    <cmos>0xAB</cmos>
+    <value id="0x00">Auto</value>
+    <value id="0x10">1.5Gb/s Max</value>
+    <value id="0x20">3Gb/s Max</value>
+    <mask>0x30</mask>
+  </Section>
+  <Section name="Memory_Interleaving">
+    <cmos>0xA2</cmos>
+    <value id="0x00">Full Interleaving</value>
+    <value id="0x40">Channel Only</value>
+    <value id="0x80">Disabled</value>
+    <mask>0xC0</mask>
+  </Section>
+  <Section name="Node_Interleaving">
+    <cmos>0xBA</cmos>
+    <value id="0x00">Disabled</value>
+    <value id="0x80">Auto</value>
+    <mask>0x80</mask>
+  </Section>
+  <Section name="1GB_PCI_Memory_Gap">
+    <cmos>0xC5</cmos>
+    <value id="0x00">Disabled</value>
+    <value id="0x20">Enabled</value>
+    <mask>0x20</mask>
+  </Section>
+  <Section name="Advanced_ECC_Support">
+    <cmos>0xBB</cmos>
+    <value id="0x00">Disabled</value>
+    <value id="0x08">Enabled</value>
+    <mask>0x08</mask>
+  </Section>
+  <Section name="Memory_Clock_Speed">
+    <cmos>0xA1</cmos>
+    <value id="0x00">Auto</value>
+    <value id="0x40">800 MHz</value>
+    <value id="0x80">1066 MHz</value>
+    <value id="0xC0">1333 MHz</value>
+    <mask>0xC0</mask>
+  </Section>
+  <Section name="AHCI_BIOS_Support">
+    <cmos>0xCD</cmos>
+    <value id="0x00">Enabled</value>
+    <value id="0x04">Disabled</value>
+    <mask>0x04</mask>
+  </Section>
+  <Section name="IPMI_WatchDog_Timer">
+    <cmos>0xAD</cmos>
+    <value id="0x00">Disabled</value>
+    <value id="0x01">Reset System</value>
+    <value id="0x02">Power Down</value>
+    <value id="0x03">Power Cycle</value>
+    <mask>0x03</mask>
+  </Section>
+  <Section name="BMC_WatchDog_TimeOut">
+    <cmos>0x9A</cmos>
+    <value id="0x00">5 Min</value>
+    <value id="0x08">10 Min</value>
+    <value id="0x10">15 Min</value>
+    <value id="0x18">20 Min</value>
+    <value id="0x20">30 Min</value>
+    <mask>0x38</mask>
+  </Section>
+  <Section name="Serial_Port_Assignment">
+    <cmos>0xCF</cmos>
+    <value id="0x00">System</value>
+    <value id="0x08">BMC</value>
+    <mask>0x08</mask>
+  </Section>
+  <Section name="Serial_Port_Connection_Mode">
+    <cmos>0xCF</cmos>
+    <value id="0x00">Direct</value>
+    <value id="0x10">Modem</value>
+    <mask>0x10</mask>
+  </Section>
+  <Section name="Embedded_Serial_Port">
+    <cmos>0x88</cmos>
+    <value id="0x01">Disabled</value>
+    <value id="0x02">3F8/IRQ4</value>
+    <value id="0x03">2F8/IRQ3</value>
+    <value id="0x04">3E8/IRQ4</value>
+    <value id="0x05">2E8/IRQ3</value>
+    <mask>0x07</mask>
+  </Section>
+  <Section name="Embedded_VGA_Control">
+    <cmos>0xA5</cmos>
+    <value id="0x00">Auto Detect</value>
+    <value id="0xC0">Always Enabled</value>
+    <mask>0xC0</mask>
+  </Section>
+  <Section name="AMD_IOMMU">
+    <cmos>0x4D</cmos>
+    <value id="0x00">Disabled</value>
+    <value id="0x04">Enabled</value>
+    <mask>0x04</mask>
+  </Section>
+  <Section name="ASPM_Mode">
+    <cmos>0xCB</cmos>
+    <value id="0x01">Disabled</value>
+    <value id="0x02">Enabled</value>
+    <mask>0x02</mask>
+  </Section>
+  <Section name="PCIe_Gen_2">
+    <cmos>0xCE</cmos>
+    <value id="0x00">Gen2</value>
+    <value id="0x02">Gen1</value>
+    <mask>0x02</mask>
+  </Section>
+  <Section name="BIOS_Serial_Console">
+    <cmos>0xCB</cmos>
+    <value id="0x00">Disabled</value>
+    <value id="0x10">COM1</value>
+    <mask>0x10</mask>
+  </Section>
+  <Section name="BIOS_Serial_Console_Baud_Rate">
+    <cmos>0x9D</cmos>
+    <value id="0x00">115200 8,n,1</value>
+    <value id="0x01">57600 8,n,1</value>
+    <value id="0x02">19200 8,n,1</value>
+    <value id="0x03">9600 8,n,1</value>
+    <mask>0x07</mask>
+  </Section>
+  <Section name="Flow_Control">
+    <cmos>0xAE</cmos>
+    <value id="0x00">None</value>
+    <value id="0x01">Hardware</value>
+    <value id="0x02">Software</value>
+    <mask>0x03</mask>
+  </Section>
+  <Section name="Redirection_After_BIOS_POST">
+    <cmos>0xAD</cmos>
+    <value id="0x00">Disabled</value>
+    <value id="0x40">Boot Loader</value>
+    <value id="0x80">Always</value>
+    <mask>0xC0</mask>
+  </Section>
+  <Section name="Terminal_Type">
+    <cmos>0xAD</cmos>
+    <value id="0x00">ANSI</value>
+    <value id="0x04">VT100</value>
+    <value id="0x08">VT-UTF8</value>
+    <mask>0x0C</mask>
+  </Section>
+  <Section name="VT-UTF8_Combo_Key_Support">
+    <cmos>0xCB</cmos>
+    <value id="0x00">Disabled</value>
+    <value id="0x20">Enabled</value>
+    <mask>0x20</mask>
+  </Section>
+  <Section name="Sredir_Memory_Display_Delay">
+    <cmos>0xAE</cmos>
+    <value id="0x00">No Delay</value>
+    <value id="0x04">Delay 1 sec</value>
+    <value id="0x08">Delay 2 sec</value>
+    <value id="0x0C">Delay 4 sec</value>
+    <mask>0x0C</mask>
+  </Section>
+  <Section name="TCG/TPM_SUPPORT">
+    <cmos>0xCB</cmos>
+    <value id="0x00">No</value>
+    <value id="0x40">Yes</value>
+    <mask>0x40</mask>
+  </Section>
+  <Section name="USB_BIOS_Support">
+    <cmos>0xCC</cmos>
+    <value id="0x00">Disabled</value>
+    <value id="0x02">Enabled</value>
+    <mask>0x02</mask>
+  </Section>
+  <Section name="Embedded_NIC_Port_1_Control">
+    <cmos>0xCF</cmos>
+    <value id="0x00">Disabled</value>
+    <value id="0x40">Enabled</value>
+    <mask>0x40</mask>
+  </Section>
+  <Section name="Embedded_NIC_Port_1_PXE">
+    <cmos>0xCF</cmos>
+    <value id="0x00">Disabled</value>
+    <value id="0x80">Enabled</value>
+    <mask>0x80</mask>
+  </Section>
+  <Section name="Embedded_NIC_Port_2_Control">
+    <cmos>0xD0</cmos>
+    <value id="0x00">Disabled</value>
+    <value id="0x01">Enabled</value>
+    <mask>0x01</mask>
+  </Section>
+  <Section name="Embedded_NIC_Port_2_PXE">
+    <cmos>0xD0</cmos>
+    <value id="0x00">Disabled</value>
+    <value id="0x02">Enabled</value>
+    <mask>0x02</mask>
+  </Section>
+  <Section name="Embedded_NIC_Port_3_Control">
+    <cmos>0xD0</cmos>
+    <value id="0x00">Disabled</value>
+    <value id="0x04">Enabled</value>
+    <mask>0x04</mask>
+  </Section>
+  <Section name="Embedded_NIC_Port_3_PXE">
+    <cmos>0xD0</cmos>
+    <value id="0x00">Disabled</value>
+    <value id="0x08">Enabled</value>
+    <mask>0x08</mask>
+  </Section>
+  <Section name="Embedded_NIC_Port_4_Control">
+    <cmos>0xD0</cmos>
+    <value id="0x00">Disabled</value>
+    <value id="0x10">Enabled</value>
+    <mask>0x10</mask>
+  </Section>
+  <Section name="Embedded_NIC_Port_4_PXE">
+    <cmos>0xD0</cmos>
+    <value id="0x00">Disabled</value>
+    <value id="0x20">Enabled</value>
+    <mask>0x20</mask>
+  </Section>
+  <Section name="Wake_On_LAN">
+    <cmos>0xD1</cmos>
+    <value id="0x00">Enabled</value>
+    <value id="0x04">Disabled</value>
+    <mask>0x04</mask>
+  </Section>
+  <Section name="Virtual_Floppy">
+    <cmos>0xD3</cmos>
+    <value id="0x00">Disabled</value>
+    <value id="0x04">Enabled</value>
+    <mask>0x04</mask>
+  </Section>
+  <Section name="POST_Speed-up">
+    <cmos>0xB8</cmos>
+    <value id="0x00">Disabled</value>
+    <value id="0x80">Enabled</value>
+    <mask>0x80</mask>
+  </Section>
+  <Section name="Splash_Screen">
+    <cmos>0xB9</cmos>
+    <value id="0x00">Disabled</value>
+    <value id="0x01">Enabled</value>
+    <mask>0x01</mask>
+  </Section>
+  <Section name="NUMLOCK">
+    <cmos>0xB9</cmos>
+    <value id="0x00">Off</value>
+    <value id="0x04">On</value>
+    <mask>0x04</mask>
+  </Section>
+  <Section name="USB_Device_Boot_Priority">
+    <cmos>0xD1</cmos>
+    <value id="0x00">High</value>
+    <value id="0x02">Low</value>
+    <mask>0x02</mask>
+  </Section>
+  <Section name="Drive Write Cache">
+    <cmos>0xA9</cmos>
+    <value id="0x00">Disabled</value>
+    <value id="0x02">Enabled</value>
+    <mask>0x02</mask>
+  </Section> 
+  <Section name="ECMOS_Updated_Flag">
+    <cmos>0xEF</cmos>
+    <value id="0x55">Updated</value>
+    <mask>0xFF</mask>
+    <required>1</required>
+  </Section>
+  <Section name="HyperTransport Assist">
+    <cmos>0xC5</cmos>
+    <value id="0x00">Disabled</value>
+    <value id="0x40">Enabled</value>
+    <mask>0x40</mask>
+  </Section>
+  <Section name="CSTATE_MODE">
+    <cmos>0xBB</cmos>
+    <value id="00">Disabled</value>
+    <value id="04">C6</value>
+    <mask>0x04</mask>
+  </Section>
+  <Section name="CORE_LEVELING_MODE">
+    <cmos>0x8A</cmos>
+    <value id="0x00">ALL</value>
+    <value id="0x01">MC-2__IL-4</value>   
+    <value id="0x02">MC-4__IL-8</value>
+    <value id="0x03">MC-6__IL-12</value>
+    <value id="0x04">MC-8__IL-NA</value>
+    <value id="0x05">MC-10__IL-NA</value>
+    <mask>0x07</mask>
+  </Section>
+  <Section name="CPB_MODE">
+    <cmos>0xBA</cmos>
+    <value id="0x00">Disabled</value>
+    <value id="0x40">Auto</value>
+    <mask>0x40</mask>
+  </Section>
+    <Section name="HPC_MODE">
+    <cmos>0xBB</cmos>
+    <value id="0x00">Disabled</value>
+    <value id="0x02">Enabled</value>
+    <mask>0x02</mask>
+  </Section>  
+</Conrep>
